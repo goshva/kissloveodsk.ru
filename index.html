@@ -1,80 +1,109 @@
 <html lang="ru">
    <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
       <meta name="apple-mobile-web-app-title" content="CodePen">
       <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
       <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
       <title>Кисловодская команда КВН - kissloveodsk.ru </title>
       <style>
+         body {
+         margin: 1%;
+         background-color: indigo;
+         font-family: 'Courier New', Courier, monospace;
+         }
          .img-container-block {
          text-align: center;
          }
-         .img-container-inline {
-         text-align: center;
-         display: block;
-         }
          .app {
-           display: grid;
-           grid-gap: 15px; 
-           overflow: hidden;
+         display: grid;
+         grid-gap: 7px;
+         border: 1px dashed indigo;
+         padding: 2px;
+         margin: 2px; 
+         overflow: hidden;
          /*   grid-template-columns: repeat(auto-fill, 200px); */
-           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
          /*   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 150px); */
-           grid-auto-flow: dense;
+         grid-auto-flow: dense;
+         background-color: rgb(103, 0, 177);
          }
-
+         .item{
+         border: 1px solid indigo; 
+         border-radius: 1px;
+         color:wheat;
+         box-shadow:  1px 1px 1px indigo;
+         background-color: rgba(103, 0, 177, 0.267);
+         }
+         .item img {
+         width:100%
+         }
+         /*
          .item:nth-of-type(3n) {
-           grid-column: span 2;  
+         grid-column: span 2;  
          }
-
          .item:nth-of-type(2n-1) {
-           grid-row: span 2;  
+         grid-row: span 2;  
+         }
+         */
+         @media all and (max-width: 576px) {
+            .app {
+               grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+            }
          }
       </style>
       <script>
-         window.console = window.console || function(t) {};
+         console.log("hi!")
       </script>
-      <script>
-         if (document.location.search.match(/type=embed/gi)) {
-           window.parent.postMessage("resize", "*");
-         }
-      </script>
+
    </head>
-   <body class="app">
-        <div class="item">item 1</div>
-        <div class="item">item 2</div>
-        <div class="item">item 3</div>
-        <div class="item">item 4</div>
-        <div class="item">item 5</div>
-        <div class="item">item 6</div>
-        <div class="item">item 7</div>
-        <div class="item">item 8</div>
-        <div class="item">item 9</div>
-        <div class="item">item 10</div>
-        <div class="item">item 11</div>
-        <div class="item">item 12</div>  
-      <!-- Block parent element -->
-      <div class="img-container-block">
-         <img src="kissloveodsk.ru.jpg" alt="kissloveodsk.ru.jpg">
+   <body>
+      <div class="app">
+         <div class="item">
+            <img src="kissloveodsk.ru.jpg" alt="kissloveodsk.ru.jpg">
+         </div>
+         <div class="item">
+            Амироков Дмир Тагирович
+         </div>
+         <div class="item">
+            Аносова Полина Вячеславовна
+         </div>
+         <div class="item">
+            Арташова Полина Олеговна
+         </div>
+         <div class="item">
+            Арутюнян Олег Дмитриевич
+         </div>
+         <div class="item">
+            Белогубов Григорий Дмитриевич
+         </div>
+         <div class="item">
+            Белогубова София Дмитриевна
+         </div>
+         <div class="item">
+            Колесников Артём Андреевич
+         </div>
+         <div class="item">
+            Комышев Никита Михайлович
+         </div>
+         <div class="item">
+            Мартиросян Давит Овакимович
+         </div>
+         <div class="item">
+            Миронов Богдан Юрьевич
+         </div>
+         <div class="item">
+            Панафидина Анна Александровна
+         </div>
+         <div class="item">
+            Санакоев Арсен Артурович
+         </div>
+         <div class="item">
+            Сысоева Амалия Александровна
+         </div>
       </div>
-      <ul> 
-         <li>1.Аносова Полина Вячеславовна,16</li>
-         <li>2.Панафидина Анна Александровна,15</li>
-         <li>3.Белогубова София Дмитриевна,15</li>
-         <li>4.Арташова Полина Олеговна,16</li>
-         <li>5.Белогубов Григорий Дмитриевич,16</li>
-         <li>6.Мартиросян Давит Овакимович,16</li>
-         <li>7.Миронов Богдан Юрьевич,16</li>
-         <li>8.Колесников Артём Андреевич,17</li>
-         <li>9.Санакоев Арсен Артурович,16</li>
-         <li>10.Арутюнян Олег Дмитриевич,16</li>
-         <li>11.Комышев Никита Михайлович,15</li>
-         <li>12.Амироков Дмир Тагирович,15</li>
-         <li>13.Сысоева Амалия Александровна,16</li>
-      </ul>
-      <span class="img-container-inline">
-      <img src="kissloveodsk.ru.jpg" alt="kissloveodsk.ru.jpg">
-      </span>
+      <!-- Block parent element -->
+      </div>
    </body>
 </html>
