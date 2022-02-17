@@ -18,7 +18,7 @@ display: flex;
   perspective: 700px;
   font-size: clamp(10px, 2vw, 20px);
 }      
-}
+
          .img-container-block {
          text-align: center;
          }
@@ -57,7 +57,7 @@ display: flex;
             .app {
                grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
             }
-         }
+         
 .lines {
   $color: #59c1fe;
   position: fixed;
@@ -107,7 +107,7 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-}
+
 
 h2 {
   font-family: 'Mr Dafoe';
