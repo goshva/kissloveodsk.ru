@@ -1,127 +1,86 @@
-<html lang="ru">
-   <head>
-      <link href="kissloveodsk.css" rel="stylesheet">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-      <meta name="apple-mobile-web-app-title" content="CodePen">
-      <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-      <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-      <title>Кисловодская команда КВН - kissloveodsk.ru </title>
-      <style>
-         body {
-         margin: 1%;
-         background-color: indigo;
-         font-family: 'Courier New', Courier, monospace;
-         }
-         .img-container-block {
-         text-align: center;
-         }
-         .app {
-         display: grid;
-         grid-gap: 7px;
-         border: 1px dashed indigo;
-         padding: 2px;
-         margin: 2px; 
-         overflow: hidden;
-         /*   grid-template-columns: repeat(auto-fill, 200px); */
-         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-         /*   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 150px); */
-         grid-auto-flow: dense;
-         background-color: rgb(103, 0, 177);
-         }
-         .item{
-         border: 1px solid indigo; 
-         border-radius: 1px;
-         color:wheat;
-         box-shadow:  1px 1px 1px indigo;
-         background-color: rgba(103, 0, 177, 0.267);
-         }
-         .item img {
-         width:100%
-         }
-         /*
-         .item:nth-of-type(3n) {
-         grid-column: span 2;  
-         }
-         .item:nth-of-type(2n-1) {
-         grid-row: span 2;  
-         }
-         */
-         @media all and (max-width: 576px) {
-            .app {
-               grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
-            }
-         }
-      </style>
-      <script>
-         console.log(new Date())
-      </script>
-
-   </head>
+<html>
+   <link href="logo.css" rel="stylesheet">
    <body>
-     <div class="grid"></div>
-     <div class="lines"></div>
+
+<div>
+      <div class="grid"></div>
+      <div class="lines"></div>
       <h1>
-       <span>Kissloveodsk</span>
-       <span>Kissloveodsk</span>
+         <span>Kissloveodsk</span>
+         <span>Kissloveodsk</span>
       </h1>
       <h2>KBH</h2>
+</div> 
+   <div>
       <div class="app">
-         <div class="item">
-            <img src="kissloveodsk.ru.jpg" alt="kissloveodsk.ru.jpg">
-         </div>
+
          <div class="item">
             <a href="" target="_blank">
-               <img src="https://dummyimage.com/200x200/080082/ffffff&text=Дaмир" alt="Амироков Дaмир Тагирович">
+            <!--<img src="https://dummyimage.com/200x200/080082/ffffff&text=Дaмир" alt="Амироков Дaмир Тагирович"> -->
             </a>
+            <h3 title="Амироков Дaмир Тагирович">Дaмиp</h3>
+
          </div>
          <div class="item">
             <a href="" target="_blank">
-               <img src="https://dummyimage.com/200x200/620082/ffffff&text=Полина" alt="Аносова Полина Вячеславовна">
+            <!--<img src="https://dummyimage.com/200x200/620082/ffffff&text=Полина" alt="Аносова Полина Вячеславовна"> -->
             </a>
+            <h3 title="Аносова Полина Вячеславовна" >Полинa</h3>
+
          </div>
          <div class="item">
-            <a href="" target="_blank">
-               <img src="https://dummyimage.com/200x200/820042/ffffff&text=Полина" alt="Арташова Полина Олеговна">
-            </a>
+            <h3 title="Арташова Полина Олеговна">Пoлинa</h3>
          </div>
          <div class="item">
-            <a href="" target="_blank">
-               <img src="https://dummyimage.com/200x200/002e82/ffffff&text=Олег" alt="Арутюнян Олег Дмитриевич">
-            </a>
+            <h3 title="Арутюнян Олег Дмитриевич">Oлeг</h3>
          </div>
          <div class="item">
-            Белогубов Григорий Дмитриевич
+            <h3 title="Белогубов Григорий Дмитриевич">Гpигоpий</h3>
+
+            
          </div>
          <div class="item">
-            Белогубова София Дмитриевна
+            <h3 title="Белогубова София Дмитриевна">София</h3>
+
+            
          </div>
          <div class="item">
-            Колесников Артём Андреевич
+            <h3 title="Колесников Артём Андреевич">Aртём</h3>
+
+            
          </div>
          <div class="item">
-            Комышев Никита Михайлович
+            <h3 title="Комышев Никита Михайлович">Ниkитa</h3>
+
+            
          </div>
          <div class="item">
-            Мартиросян Давит Овакимович
+            <h3 title="Мартиросян Давид Овакимович">Дaвид</h3>
+
+            
          </div>
          <div class="item">
-            Миронов Богдан Юрьевич
+            <h3 title="Миронов Богдан Юрьевич">Бoгдaн</h3>
+
+            
          </div>
          <div class="item">
-            Панафидина Анна Александровна
+            <h3 title="Панафидина Анна Александровна">Aннa</h3>
+
+            
          </div>
          <div class="item">
-            Санакоев Арсен Артурович
+            <h3 title="Санакоев Арсен Артурович">Aрсен</h3>
+
          </div>
          <div class="item">
-            <a href="" target="_blank">
-               <img src="https://dummyimage.com/200x200/4c0082/ffffff&text=Амалия" alt="Сысоева Амалия Александровна">
-            </a>            
+            <h3 title="Сысоева Амалия Александровна">Aмaлия</h3>
          </div>
       </div>
-      <!-- Block parent element -->
       </div>
+   </div>
+   <!-- <div class="item">
+      <img src="kissloveodsk.ru.jpg" alt="kissloveodsk.ru.jpg">
+   </div> -->
    </body>
 </html>
